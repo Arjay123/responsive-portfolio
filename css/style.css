@@ -1,13 +1,11 @@
-div, section{
-	/*border: 1px solid red;*/
-}
-
-div, section {
+div, section, article {
 	margin: 1vw 0;
+	/*border: 1px solid red;*/
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
+	font-size: 13pt;
 	color: #2d3c49;
 }
 
@@ -21,7 +19,10 @@ a {
 	border: 1px solid #2d3c49;
 }
 
-
+hr {
+	border-width: 3px;
+	border-radius: 20px;
+}
 
 
 .banner-img {
@@ -36,26 +37,50 @@ a {
 	color: #7d97ad;
 }
 
-@media screen and (max-width: 375px) {
-	body {
-		font-size: 13pt;
+.container-fluid{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+h1 {
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+h4 {
+	font-size: .7em;
+}
+
+h5 {
+	font-size: .7em;
+}
+
+.logo-img {
+	max-height: 77px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.featured_work-header {
+		text-align: left;
 	}
 
-	h1 {
-		font-size: 1.3em;
-		letter-spacing: 1px;
-		font-weight: 100;
+	body{
+		font-size: 16pt;
 	}
 
-	h4 {
-		font-size: .7em;
+	h1{
+		font-size: 2em;
 	}
 
-	h5 {
-		font-size: .7em;
-	}
-
-	.logo-img {
-		max-height: 77px;
+	h4{
+		font-size: 1em;
 	}
 }
+
+
+
+
