@@ -33,7 +33,7 @@ You can then access the website by navigating to 127.0.0.1:8000
 
 
 Provided design mockup
-![Design Mockup](design_mockup.jpg)
+![Design Mockup](design-mockup.jpg)
 
 Screenshot of completed webpage
 ![Completed webpage](screenshot.jpg)
