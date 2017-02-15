@@ -50,7 +50,7 @@
 						<picture>
 							<source media="(min-width: 1024px)" srcset="img/movie_trailer_sample-large.png 1x, img/movie_trailer_sample-large_2x.png 2x">
 							<source media="(min-width: 768px)" srcset="img/movie_trailer_sample-medium.png 1x, img/movie_trailer_sample-large.png 2x">
-							<img class="img-responsive center-block project-img" src="img/movie_trailer_sample-small.png" alt="Screenshot of movie trailer website">
+							<img class="img-responsive center-block project-img" src="img/movie_trailer_sample-small.png" alt="Screenshot of movie trailer website" data-toggle="modal" data-target="#movie_trailer_website-modal">
 						</picture>
 					</section>
 
@@ -68,7 +68,7 @@
 						<picture>
 							<source media="(min-width: 1024px)" srcset="img/cyoa_sample-large.jpg 1x, img/cyoa_sample-large_2x.jpg 2x">
 							<source media="(min-width: 768px)" srcset="img/cyoa_sample-medium.jpg 1x, img/cyoa_sample-large.jpg 2x">
-							<img class="img-responsive center-block project-img" src="img/cyoa_sample-small.jpg" alt="Udacity's git tutorial banner">
+							<img class="img-responsive center-block project-img" src="img/cyoa_sample-small.jpg" alt="Udacity's git tutorial banner" data-toggle="modal" data-target="#create_your_own_adventure-modal">
 						</picture>
 					</section>
 
@@ -87,7 +87,7 @@
 						<picture>
 							<source media="(min-width: 1024px)" srcset="img/googler-large.png 1x, img/googler-large_2x.png 2x">
 							<source media="(min-width: 768px)" srcset="img/googler-medium.png 1x, img/googler-large.png 2x">
-							<img class="img-responsive center-block project-img" src="img/googler-small.png" alt="Future Googler">
+							<img class="img-responsive center-block project-img" src="img/googler-small.png" alt="Future Googler" data-toggle="modal" data-target="#googler-modal">
 						</picture>
 					</section>
 
@@ -108,5 +108,75 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="js/bootstrap.min.js"></script>
+		<script src="/bower_components/jquery-gh-readme/dist/jquery.gh-readme.min.js"></script>
+
+
+		<!-- Modal -->
+	    <div class="modal fade" id="movie_trailer_website-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+
+	                <div class="modal-body" id="movie_trailer_website-readme"></div>
+
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="modal fade" id="create_your_own_adventure-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+
+	                <div class="modal-body" id="create_your_own_adventure-readme"></div>
+
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="modal fade" id="googler-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+
+	                <div class="modal-body" id="googler-readme"></div>
+
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+
+	            </div>
+	        </div>
+	    </div>
+
+	    <script>
+		    $(function () {
+		        var options = {
+		            owner: 'Arjay123',
+		            repo: 'movie-trailer-website'
+		        };
+		        $('#movie_trailer_website-readme').readme(options);
+
+		        options = {
+		            owner: 'Arjay123',
+		            repo: 'google-interview-university'
+		        };
+		        $('#googler-readme').readme(options);
+
+		        options = {
+		            owner: 'Arjay123',
+		            repo: 'create-your-own-adventure'
+		        };
+		        $('#create_your_own_adventure-readme').readme(options);
+
+
+		    });
+		</script>
+
 	</body>
 </html>
