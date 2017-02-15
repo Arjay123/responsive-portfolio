@@ -50,13 +50,14 @@ img {
 	max-width: 100%;
 }
 
+
 .modal-body {
 	max-width: 100%;
 	word-wrap: break-word;
 }
 
 
-button{
+button {
 	display: inline;
 }
 
@@ -78,8 +79,8 @@ button{
 }
 
 
-.featured_work-header, 
-.divider{
+.featured-work-header, 
+.divider {
 	color: #7d97ad;
 }
 
@@ -89,12 +90,12 @@ button{
 }
 
 
-.featured_work {
+.featured-work {
 	margin-top: 0px;
 }
 
 
-.container-fluid{
+.container-fluid {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -105,7 +106,7 @@ button{
 }
 
 
-.project-header-modal{
+.project-header-modal {
 	font-size: 12pt;
 }
 
@@ -113,22 +114,22 @@ button{
 /* readjust font sizes and header positions for ipad and larger screen sizes */
 @media screen and (min-width: 768px) {
 	
-	.featured_work-header {
+	.featured-work-header {
 		text-align: left;
 	}
 
 
-	body{
+	body {
 		font-size: 16pt;
 	}
 
 
-	h1{
+	h1 {
 		font-size: 2em;
 	}
 
 
-	h4{
+	h4 {
 		font-size: 1em;
 	}
 
