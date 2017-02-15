@@ -1,11 +1,14 @@
-div, section, article, header {
+div, 
+section, 
+article, 
+header {
 	margin: 1vw 0;
 	/*border: 1px solid red;*/
 }
 
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 13pt;
 	color: #2d3c49;
 }
@@ -29,12 +32,12 @@ h1 {
 
 
 h4 {
-	font-size: .7em;
+	font-size: 0.7em;
 }
 
 
 h5 {
-	font-size: .7em;
+	font-size: 0.7em;
 }
 
 
@@ -43,9 +46,13 @@ hr {
 	border-radius: 20px;
 }
 
-
-.modal-body img{
+img {
 	max-width: 100%;
+}
+
+.modal-body {
+	max-width: 100%;
+	word-wrap: break-word;
 }
 
 
@@ -71,7 +78,8 @@ button{
 }
 
 
-.featured_work-header,  .divider{
+.featured_work-header, 
+.divider{
 	color: #7d97ad;
 }
 
