@@ -1,13 +1,15 @@
-div, section, article {
+div, section, article, header {
 	margin: 1vw 0;
 	/*border: 1px solid red;*/
 }
+
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 13pt;
 	color: #2d3c49;
 }
+
 
 a {
 	color: #2d3c49;
@@ -17,28 +19,39 @@ a {
 	margin-bottom: 40px;
 }
 
+
 h1 {
 	font-size: 1.3em;
 	letter-spacing: 1px;
 	font-weight: 100;
 }
 
+
 h4 {
 	font-size: .7em;
 }
 
+
 h5 {
 	font-size: .7em;
 }
+
 
 hr {
 	border-width: 3px;
 	border-radius: 20px;
 }
 
+
 .modal-body img{
 	max-width: 100%;
 }
+
+
+button{
+	display: inline;
+}
+
 
 .logo-img {
 	max-height: 100px;
@@ -46,51 +59,65 @@ hr {
 	border: 1px solid #2d3c49;
 }
 
+
 .banner-img {
 	min-width: 100%;
 }
+
 
 .project-img {
 	border: 1px solid #2d3c49;
 }
 
+
 .featured_work-header,  .divider{
 	color: #7d97ad;
 }
+
 
 .divider {
 	margin-top: 0px;
 }
 
+
 .featured_work {
 	margin-top: 0px;
 }
+
 
 .container-fluid{
 	display: flex;
 	flex-wrap: wrap;
 }
 
+
 .logo-img {
 	max-height: 77px;
 }
 
 
+.project-header-modal{
+	font-size: 12pt;
+}
 
 
 /* readjust font sizes and header positions for ipad and larger screen sizes */
 @media screen and (min-width: 768px) {
+	
 	.featured_work-header {
 		text-align: left;
 	}
+
 
 	body{
 		font-size: 16pt;
 	}
 
+
 	h1{
 		font-size: 2em;
 	}
+
 
 	h4{
 		font-size: 1em;
